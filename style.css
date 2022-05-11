@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: #e8d2d2;
+  background-color: hsl(0, 32%, 87%);
   color: hsl(0, 32%, 20%);
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
@@ -13,6 +13,7 @@ body {
 }
 
 .container {
+  max-width: 900px;
   width: 60%;
   margin: 0 auto;
 }
@@ -22,10 +23,9 @@ body {
   padding: 20px 50px;
   border: 4px double hsl(0, 32%, 20%);
   background-color: hsl(0, 32%, 92%);
-  /* box-shadow: 9px 6px 2px 0px rgb(18, 18, 18); */
 }
 
-.card.social-links {
+.card-mini {
   width: 14%;
   border-style: dashed;
   border-width: 2px;
@@ -77,12 +77,10 @@ a.button:hover {
 
 ul.social-links {
   padding: 0;
-  /* margin: 1em 0; */
 }
 
 ul.social-links > li {
   font-size: 1.5em;
-  /* letter-spacing: 0.3em; */
   list-style: none;
   display: inline;
   padding: 0 5px;
@@ -93,7 +91,7 @@ ul.social-links > li:hover {
   color: hsl(0, 32%, 47%);
 }
 
-.social-links h2 {
+.card-mini h2 {
   text-transform: uppercase;
   font-size: 0.9em;
   margin: 0.5em 0;
@@ -119,7 +117,7 @@ ul.social-links > li:hover {
     padding: 10px 50px;
   }
 
-  .card.social-links {
+  .card-mini {
     width: 20%;
     padding: 10px 20px;
   }
@@ -130,7 +128,7 @@ ul.social-links > li:hover {
     padding: 10px 30px;
   }
 
-  .card.social-links {
+  .card-mini {
     width: 25%;
   }
 }
